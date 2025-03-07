@@ -1,0 +1,28 @@
+CC = gcc
+CFLAGS = -Wall -fPIC
+LDFLAGS = -lm
+
+SRC = src/Decompression.c src/Qtcmap.c src/Compression.c src/Pixmap.c src/Qtree.c
+OBJ = obj/Decompression.o obj/Qtcmap.o obj/Compression.o obj/Pixmap.o obj/Qtree.o
+SO_OBJ = obj/Decompression.o obj/Qtcmap.o obj/Compression.o obj/Pixmap.o obj/Qtree.o
+
+TARGET = lib/libprojet.so
+
+
+
+all: $(TARGET)
+
+obj/%.o: src/%.c
+	mkdir -p obj
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(TARGET): $(SO_OBJ)
+	mkdir -p PGM
+	mkdir -p QTC
+	mkdir -p lib
+	$(CC) -shared -o $@ $^ $(LDFLAGS)
+
+clean:
+	rm -f $(OBJ) $(TARGET)
+	rm -rf obj lib
+
