@@ -1,0 +1,3 @@
+int main(void { //manque parenthèse
+    return 0;
+}

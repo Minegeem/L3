@@ -1,0 +1,15 @@
+int add(int a, int b) {
+    return !a + b;
+}
+
+int main(void) {
+    int result;
+    result = add(3, 4);
+    while (result == 0)
+    {
+        result = 1;
+    }
+    
+    result = result + 1;
+    return result;
+}

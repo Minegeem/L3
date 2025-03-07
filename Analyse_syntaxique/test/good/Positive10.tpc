@@ -1,0 +1,6 @@
+int global;
+
+int getGlobalVar(void) {
+    global = 10;
+    return global;
+}

@@ -1,0 +1,5 @@
+int main(void) {
+    char string;
+    string = "jregkjng"; // ne connait pas les ""
+
+}

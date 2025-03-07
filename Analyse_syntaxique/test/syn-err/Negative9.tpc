@@ -1,0 +1,9 @@
+char thing(char oui) {
+    return oui;
+}
+
+int main(void) {
+    int x;
+    x = !§; // pas reconnu 
+    return x;
+}

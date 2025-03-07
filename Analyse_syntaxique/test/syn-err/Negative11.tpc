@@ -1,0 +1,3 @@
+static int testFunc(void) { // static ne peut pas être utilisé pour une fonction
+    return 0;
+}

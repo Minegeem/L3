@@ -1,0 +1,3 @@
+int 123func() { // Erreur : nom de fonction invalide
+    return 0;
+}

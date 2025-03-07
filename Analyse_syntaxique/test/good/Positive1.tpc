@@ -1,0 +1,19 @@
+
+int calculSomme(int nombre1, int nombre2) {
+    int somme;
+    somme = nombre1 + nombre2; //oui coucou
+
+}
+
+int main(void) {
+    int nombre1; 
+    int nombre2; 
+    int resultat; 
+
+    resultat = calculSomme(nombre1, nombre2); 
+
+
+    return 0;
+}
+
+

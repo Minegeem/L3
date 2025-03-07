@@ -1,0 +1,7 @@
+int main(void) {
+    else {
+        return 0;
+    }
+}
+
+//pas de if avant

@@ -1,0 +1,33 @@
+int add(int a, int b) {
+    return a + b;
+}
+
+int sub(int a, int b) {
+    return a - b;
+}
+
+int mul(int a, int b) {
+    return a * b;
+}
+
+int div(int a, int b) {
+    if (b != 0) {
+        return a / b;
+    } else {
+        return 0;
+    }
+}
+
+int main(void) {
+    int x;
+    x = 10; // toutes les déclations de variable se font avant l'initialisation
+    int y;
+    y = 5;
+
+    int result1 = add(x, y);
+    int result2 = sub(x, y);
+    int result3 = mul(x, y);
+    int result4 = div(x, y);
+
+    return result1 + result2 + result3 + result4;
+}

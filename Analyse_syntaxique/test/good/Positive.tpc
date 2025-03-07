@@ -1,0 +1,14 @@
+/*
+oui
+*/
+
+
+
+//mm
+int main (void) {
+    int resulat;
+    resulat = 0;
+    return (resulat);
+}
+
+

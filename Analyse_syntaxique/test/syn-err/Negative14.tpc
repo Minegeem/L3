@@ -1,0 +1,5 @@
+float pi = 3.14; // float pas reconnu
+
+int main(void) {
+    return 0;
+}

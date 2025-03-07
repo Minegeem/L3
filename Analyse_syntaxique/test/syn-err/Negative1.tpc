@@ -1,0 +1,9 @@
+int main(void) {
+    int x;
+    x = 5 @ 2; // '@' est un caractère non reconnu (erreur lexicale)
+    char c;
+    c= 's';
+
+}
+
+
